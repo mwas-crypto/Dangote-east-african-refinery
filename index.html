@@ -4,405 +4,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dangote East African Refinery | Kenya</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f4;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #073b2a;
-            color: white;
-            padding: 20px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        header h2 {
-            font-size: 21px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #f5c542;
-        }
-
-        .hero {
-            min-height: 480px;
-            background: linear-gradient(
-                rgba(0, 35, 22, 0.85),
-                rgba(0, 35, 22, 0.85)
-            ), url();
-
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            max-width: 750px;
-            margin: auto;
-        }
-
-        .hero button {
-            margin-top: 25px;
-            padding: 13px 25px;
-            background-color: #e8b82f;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .hero button:hover {
-            background-color: white;
-        }
-
-        section {
-            padding: 65px 8%;
-        }
-
-        section h2 {
-            text-align: center;
-            color: #075337;
-            font-size: 30px;
-            margin-bottom: 25px;
-        }
-
-        .intro {
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            margin-top: 35px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            border-top: 4px solid #087044;
-        }
-
-        .card h3 {
-            color: #075337;
-            margin-bottom: 12px;
-        }
-
-        .facts {
-            background-color: #e6eee8;
-        }
-
-        .project-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .fact {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .fact h3 {
-            color: #087044;
-            font-size: 25px;
-        }
-
-        .challenges {
-            background-color: white;
-        }
-
-        .contact {
-            background-color: #e6eee8;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #073b2a;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media(max-width: 700px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav {
-                text-align: center;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-
-            .hero h1 {
-                font-size: 30px;
-            }
-        }
-    </style>
+    <meta name="description" content="Exploring the development of one of Africa's major petroleum and petrochemical projects in Lamu County, Kenya.">
+    <!-- Separate Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Header -->
     <header>
-        <h2>DANGOTE REFINERY</h2>
+        <a href="index.html" class="brand-container">
+            <div class="brand-icon">D</div>
+            <div class="brand-text">
+                <h2>DANGOTE REFINERY</h2>
+                <span>East Africa Project &bull; Kenya</span>
+            </div>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Project</a>
-            <a href="#benefits">Benefits</a>
-            <a href="#challenges">Challenges</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Homepage -->
-    <div class="hero" id="home">
+    <!-- Homepage Hero -->
+    <section class="hero" id="home">
+        <span class="hero-badge">LAPSSET Corridor &bull; Lamu Port</span>
         <h1>Dangote East African Refinery</h1>
-
         <p>
-            Exploring the development of one of Africa's
-            major petroleum and petrochemical projects
-            in Lamu County, Kenya.
+            Exploring the development of one of Africa's major petroleum and petrochemical 
+            complexes in Mokowe, Lamu County, Kenya — driving regional energy independence 
+            and economic transformation.
         </p>
-
-        <button onclick="document.getElementById('about').scrollIntoView()">
-            Explore Project
-        </button>
-    </div>
-
-    <!-- Introduction -->
-    <section id="about">
-        <h2>Introduction</h2>
-
-        <div class="intro">
-            <p>
-                The Dangote East African Refinery is a major
-                industrial investment led by Nigerian businessman
-                Aliko Dangote through the Dangote Group.
-
-                The project is located in Mokowe, Lamu County,
-                Kenya. It is intended to produce petroleum products
-                for Kenya and other countries in East Africa.
-
-                The project aims to strengthen regional energy
-                security, support industrial development and
-                reduce dependence on imported refined petroleum
-                products.
-            </p>
+        <div class="hero-buttons">
+            <a href="project.html" class="btn btn-primary">Explore Project Specs</a>
+            <a href="about.html" class="btn btn-secondary">Learn About The Vision</a>
         </div>
     </section>
 
-    <!-- Project Information -->
-    <section class="facts" id="project">
-        <h2>Project Overview</h2>
+    <!-- Project Metrics Overview -->
+    <section class="facts" id="project-overview">
+        <div class="section-header">
+            <span class="section-subtitle">Key Indicators</span>
+            <h2>Project at a Glance</h2>
+            <p>Milestone metrics driving the largest downstream energy initiative in East and Central Africa.</p>
+        </div>
 
         <div class="project-info">
-
             <div class="fact">
-                <h3>Lamu</h3>
-                <p>Project Location, Kenya</p>
+                <div class="fact-number">Lamu</div>
+                <div class="fact-title">Location</div>
+                <p>Mokowe, Lamu County, Kenya</p>
             </div>
 
             <div class="fact">
-                <h3>$16 Billion</h3>
-                <p>Announced Investment</p>
+                <div class="fact-number stat-counter" data-target="16" data-prefix="$" data-suffix="B">$16B</div>
+                <div class="fact-title">Estimated Investment</div>
+                <p>Announced Capital Outlay</p>
             </div>
 
             <div class="fact">
-                <h3>700,000</h3>
+                <div class="fact-number stat-counter" data-target="700000" data-suffix=" bpd">700,000 bpd</div>
+                <div class="fact-title">Refining Capacity</div>
                 <p>Barrels Per Day Target Capacity</p>
             </div>
 
             <div class="fact">
-                <h3>2030</h3>
-                <p>Target Completion Year</p>
+                <div class="fact-number stat-counter" data-target="2030">2030</div>
+                <div class="fact-title">Target Horizon</div>
+                <p>Projected Commissioning Year</p>
             </div>
-
         </div>
     </section>
-<!-- REFINERY PROJECT GALLERY -->
-<section id="gallery">
 
-    <h2>Dangote Refinery Project Gallery</h2>
+    <!-- Introduction / Summary -->
+    <section id="about">
+        <div class="two-col">
+            <div>
+                <span class="section-subtitle">Executive Background</span>
+                <h2 style="text-align: left; margin-bottom: 25px;">Pioneering East African Energy Self-Sufficiency</h2>
+                <p>
+                    The Dangote East African Refinery is an ambitious industrial investment led by 
+                    Nigerian industrialist Aliko Dangote through the Dangote Group.
+                </p>
+                <p>
+                    Strategically sited in Mokowe within Lamu County, Kenya, the facility is designed to 
+                    process crude into refined petroleum products—including Euro-V gasoline, ultra-low sulfur diesel, 
+                    aviation jet fuel, and petrochemical feedstocks—serving Kenya and the wider East African Community (EAC).
+                </p>
+                <p>
+                    By establishing high-capacity domestic refining along the Indian Ocean coastline, 
+                    the initiative aims to eliminate regional vulnerability to volatile global imports, lower logistics costs, 
+                    and catalyze local industrial manufacturing.
+                </p>
+                <div style="margin-top: 25px;">
+                    <a href="about.html" class="btn btn-primary">Read Full History &amp; Leadership &rarr;</a>
+                </div>
+            </div>
 
-    <div class="cards">
+            <div class="content-block" style="margin-bottom: 0;">
+                <h3>Core Strategic Pillars</h3>
+                <div class="cards" style="grid-template-columns: 1fr; margin-top: 15px; gap: 15px;">
+                    <div class="card" style="padding: 18px; border-top-color: var(--primary);">
+                        <h4 style="color: var(--primary-dark); margin-bottom: 6px;">Strategic Coastal Hub</h4>
+                        <p style="font-size: 14px;">Direct integration with Lamu Deep Sea Port facilitating supertanker berth and seamless maritime distribution.</p>
+                    </div>
+                    <div class="card" style="padding: 18px; border-top-color: var(--accent-gold);">
+                        <h4 style="color: var(--primary-dark); margin-bottom: 6px;">LAPSSET Corridor Anchor</h4>
+                        <p style="font-size: 14px;">Serving as a primary industrial anchor for the Lamu Port-South Sudan-Ethiopia-Transport corridor.</p>
+                    </div>
+                    <div class="card" style="padding: 18px; border-top-color: var(--primary-light);">
+                        <h4 style="color: var(--primary-dark); margin-bottom: 6px;">Petrochemical Derivatives</h4>
+                        <p style="font-size: 14px;">Supplying polypropylene and fertilizers to stimulate domestic agriculture and manufacturing across Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1513828583688-c52646e2e2af?w=800"
-                 alt="Industrial refinery"
-                 style="width:100%; height:230px; object-fit:cover;">
-
-            <h3>Industrial Refining</h3>
-            <p>Industrial facilities used in petroleum production.</p>
+    <!-- Exploratory Sections / Cards -->
+    <section style="background-color: var(--bg-muted);">
+        <div class="section-header">
+            <span class="section-subtitle">Deep Dive</span>
+            <h2>Explore The Refinery Project</h2>
+            <p>Access focused research modules on economic viability, environmental governance, and technical specifications.</p>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800"
-                 alt="Energy infrastructure"
-                 style="width:100%; height:230px; object-fit:cover;">
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">&#9881;</div>
+                <h3>Technical &amp; Facilities</h3>
+                <p>
+                    Examine the engineering blueprint: single-train crude distillation units, catalytic cracking, 
+                    berthing facilities at Lamu Port, and petrochemical integration.
+                </p>
+                <a href="project.html" class="card-link">View Project Specs &rarr;</a>
+            </div>
 
-            <h3>Energy Infrastructure</h3>
-            <p>Infrastructure supporting energy production.</p>
+            <div class="card">
+                <div class="card-icon">&#128200;</div>
+                <h3>Regional Benefits</h3>
+                <p>
+                    Discover the expected socioeconomic advantages: tens of thousands of direct and indirect jobs, 
+                    foreign exchange retention, and regional trade security across EAC.
+                </p>
+                <a href="benefits.html" class="card-link">Explore Benefits &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128737;</div>
+                <h3>Challenges &amp; Ecology</h3>
+                <p>
+                    Review the environmental safeguards, marine conservation in Lamu Archipelago, capital financing, 
+                    and community land compensation frameworks.
+                </p>
+                <a href="challenges.html" class="card-link">Review Considerations &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refinery Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <span class="section-subtitle">Visual Overview</span>
+            <h2>Dangote Refinery Project Gallery</h2>
+            <p>Photographic documentation of heavy refinery infrastructure, coastal logistics, and industrial processing units.</p>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800"
-                 alt="Industrial processing"
-                 style="width:100%; height:230px; object-fit:cover;">
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <div class="gallery-img-container" data-caption="Industrial Refining - Advanced distillation units for refined petroleum fuels">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646e2e2af?w=800" alt="Industrial refinery">
+                    <div class="gallery-overlay">Click to enlarge</div>
+                </div>
+                <div class="gallery-body">
+                    <h3>Industrial Refining</h3>
+                    <p>Heavy distillation towers and processing facilities engineered for high-volume crude conversion.</p>
+                </div>
+            </div>
 
-            <h3>Industrial Processing</h3>
-            <p>Industrial technology and processing facilities.</p>
+            <div class="gallery-card">
+                <div class="gallery-img-container" data-caption="Energy Infrastructure - High capacity storage tanks and pipeline networks">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800" alt="Energy infrastructure">
+                    <div class="gallery-overlay">Click to enlarge</div>
+                </div>
+                <div class="gallery-body">
+                    <h3>Energy Infrastructure</h3>
+                    <p>Strategic terminal storage systems and automated pipelines supporting regional export logistics.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img-container" data-caption="Petrochemical Processing - Fluidized catalytic cracking and polymer units">
+                    <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800" alt="Industrial processing">
+                    <div class="gallery-overlay">Click to enlarge</div>
+                </div>
+                <div class="gallery-body">
+                    <h3>Industrial Processing</h3>
+                    <p>State-of-the-art process automation units manufacturing plastic resins, polypropylene, and refined fuel.</p>
+                </div>
+            </div>
         </div>
 
+        <div style="text-align: center; margin-top: 35px;">
+            <a href="project.html#specs" class="btn btn-primary">View Full Facility Specifications</a>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section style="background: linear-gradient(rgba(7, 59, 42, 0.95), rgba(7, 59, 42, 0.95)), url('https://images.unsplash.com/photo-1513828583688-c52646e2e2af?w=1200') center/cover; color: white; text-align: center; padding: 70px 8%;">
+        <h2 style="color: white; margin-bottom: 15px;">Have Inquiries or Research Questions?</h2>
+        <p style="color: #cadfd4; max-width: 650px; margin: 0 auto 25px; font-size: 17px;">
+            This educational portal tracks information and developments regarding the Dangote East African Refinery in Kenya.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Contact Project Researchers</a>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" src="" alt="Enlarged gallery view">
+        <div class="lightbox-caption"></div>
     </div>
-
-</section>
-    <!-- Benefits -->
-    <section id="benefits">
-        <h2>Expected Benefits to Kenya</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Employment Opportunities</h3>
-                <p>
-                    The project is expected to create employment
-                    opportunities during construction and
-                    operation, benefiting skilled and unskilled workers.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Economic Growth</h3>
-                <p>
-                    The investment could support economic growth,
-                    increase industrial activity and encourage
-                    additional business opportunities.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Energy Security</h3>
-                <p>
-                    Local refining capacity could reduce dependence
-                    on imported refined petroleum products and
-                    improve regional fuel supply.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Regional Trade</h3>
-                <p>
-                    The refinery is intended to supply petroleum
-                    products to Kenya and neighbouring East African
-                    countries.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Challenges -->
-    <section class="challenges" id="challenges">
-        <h2>Challenges and Considerations</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Environmental Impact</h3>
-                <p>
-                    Refinery operations must address pollution,
-                    waste management, emissions and protection
-                    of marine ecosystems.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Project Financing</h3>
-                <p>
-                    Financing such a large industrial project
-                    requires significant investment and effective
-                    financial management.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Land and Community Issues</h3>
-                <p>
-                    Land rights, compensation and community
-                    participation are important considerations
-                    in the development of the project.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <h2>About This Website</h2>
-
-        <p>
-            This website is an educational project developed
-            to provide information about the Dangote East
-            African Refinery in Kenya.
-        </p>
-
-        <p style="margin-top:15px;">
-            Project Research | Energy Development | Kenya
-        </p>
-    </section>
 
     <!-- Footer -->
     <footer>
-        <p>
-            &copy; 2026 Dangote East African Refinery Project.
-            Educational Website.
-        </p>
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>Dangote East African Refinery</h3>
+                <p>
+                    An educational research portal tracking one of East Africa's most significant planned 
+                    hydrocarbon and petrochemical infrastructure developments in Lamu County, Kenya.
+                </p>
+                <div style="margin-top: 15px; font-size: 13px; color: #9bb7aa;">
+                    Location: Mokowe, Lamu &bull; Republic of Kenya
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Project</a></li>
+                    <li><a href="project.html">Technical Specs</a></li>
+                    <li><a href="benefits.html">Regional Benefits</a></li>
+                    <li><a href="challenges.html">Challenges &amp; ESG</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Key Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html#dangote-group">Dangote Group</a></li>
+                    <li><a href="project.html#lapsset">LAPSSET Corridor</a></li>
+                    <li><a href="benefits.html#energy-security">Energy Security</a></li>
+                    <li><a href="challenges.html#environment">Marine Conservation</a></li>
+                    <li><a href="contact.html#faq">Portal FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Project Updates</h3>
+                <p>Subscribe for educational research briefs and development progress announcements.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Dangote East African Refinery Project. Educational &amp; Informational Research Portal.</p>
+            <p>Designed for academic and public analysis &bull; Kenya</p>
+        </div>
     </footer>
 
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
