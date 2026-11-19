@@ -52,7 +52,7 @@ You can run it using any of the following methods:
 
 1. Open your file explorer and navigate to the project directory:
    ```bash
-   cd /home/miop/home/projects/other-projs/my-first-website
+   cd /my-first-website
    ```
 2. Double-click **`index.html`** or right-click and choose **Open With > Google Chrome / Firefox / Edge / Safari**.
 
@@ -64,7 +64,7 @@ Running a local HTTP server ensures smooth module loading and proper path resolu
 
 1. Open your terminal in the project directory:
    ```bash
-   cd /home/miop/home/projects/other-projs/my-first-website
+   cd /my-first-website
    ```
 
 2. Start the local server:
